@@ -86,10 +86,10 @@ if st.button("Calculate"):
         # VARIANCE & STD
         # =============================
         if variance_t:
-            st.write("**Variance:**", np.var(data, ddof=1))
+            st.write("**Variance:**", np.var(data, ddof=0))
 
         if std_t:
-            st.write("**Standard Deviation:**", np.std(data, ddof=1))
+            st.write("**Standard Deviation:**", np.std(data, ddof=0))
 
         # =============================
         # FENCES
